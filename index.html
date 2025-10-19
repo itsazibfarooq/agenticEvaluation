@@ -1,70 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="Who is Responsible? The Data, Models, Users or Regulations? Responsible Generative AI for a Sustainable Future - A comprehensive survey on responsible AI practices.">
-  <meta name="keywords" content="Responsible AI, Generative AI, AI Ethics, AI Governance, Sustainable AI">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Who is Responsible? The Data, Models, Users or Regulations? Responsible Generative AI for a Sustainable Future</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Evaluating and Governing Agentic AI: Benchmarks, Metrics and Regulatory Alignment"
+    />
+    <meta
+      name="keywords"
+      content="Agentic AI, AI Evaluation, AI Benchmarks, AI Governance"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Evaluating and Governing Agentic AI: Benchmarks, Metrics and Regulatory
+      Alignment
+    </title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-    gtag('js', new Date());
+      gtag("js", new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+      gtag("config", "G-PYVRSFMDRL");
+    </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <link rel="icon" href="./static/images/favicon.svg" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
-</head>
-<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center">
+          <a class="navbar-item" href="#" title="Home">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+          </a>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="#" title="Home">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
+          <a
+            class="navbar-item"
+            href="https://github.com/anas-zafar/Responsible-AI"
+            target="_blank"
+            title="GitHub Repository"
+          >
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
 
-      <a class="navbar-item" href="https://github.com/anas-zafar/Responsible-AI" target="_blank" title="GitHub Repository">
-      <span class="icon">
-          <i class="fab fa-github"></i>
-      </span>
-      </a>
-
-<!--       <div class="navbar-item has-dropdown is-hoverable">
+          <!--       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More Research
         </a>
@@ -83,274 +107,333 @@
           </a>
         </div>
       </div> -->
-    </div>
+        </div>
+      </div>
+    </nav>
 
-  </div>
-</nav>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                Who is Responsible? The Data, Models, Users or Regulations?
+                Responsible Generative AI for a Sustainable Future
+              </h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Azib Farooq<sup>∗1</sup>,</span>
+                <span class="author-block">Azib Farooq<sup>∗2</sup>,</span>
+                <span class="author-block">Azib Farooq<sup>3</sup>,</span>
+                <span class="author-block">Azib Farooq<sup>4</sup>,</span>
+                <span class="author-block">Azib Farooq<sup>5</sup>,</span>
+                <span class="author-block">Azib Farooq<sup>6</sup>,</span>
+              </div>
 
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>∗</sup>Equal contributors</span>
+              </div>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Who is Responsible? The Data, Models, Users or Regulations? Responsible Generative AI for a Sustainable Future</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Shaina Raza<sup>∗1</sup>,</span>
-            <span class="author-block">Rizwan Qureshi<sup>∗2</sup>,</span>
-            <span class="author-block">Anam Zahid<sup>3</sup>,</span>
-            <span class="author-block">Safiullah Kamawal<sup>4</sup>,</span>
-            <span class="author-block">Joe Fioresi<sup>5</sup>,</span>
-            <span class="author-block">Ferhat Sadak<sup>6</sup>,</span>
-            <span class="author-block">Muhammad Saeed<sup>7</sup>,</span>
-            <span class="author-block">Ranjan Sapkota<sup>8</sup>,</span>
-            <span class="author-block">Aditya Jain<sup>9</sup>,</span>
-            <span class="author-block">Anas Zafar<sup>10</sup>,</span>
-            <span class="author-block">Muneeb Ul Hassan<sup>11</sup>,</span>
-            <span class="author-block">Aizan Zafar<sup>12</sup>,</span>
-            <span class="author-block">Hasan Maqbool<sup>13</sup>,</span>
-            <span class="author-block">Ashmal Vayani<sup>14</sup>,</span>
-            <span class="author-block">Jia Wu<sup>15</sup>,</span>
-            <span class="author-block">Maged Shoman<sup>16</sup></span>
-          </div>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Various Institutions</span>
+              </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>∗</sup>Equal contributors</span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Various Institutions</span>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2502.08650"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/pdf/2502.08650"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
                   </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2502.08650"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/abs/2502.08650"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/anas-zafar/Responsible-AI"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
+                  <!-- Code Link. -->
+                  <span class="link-block">
+                    <a
+                      href="https://github.com/itsazibfarooq/agenticEvaluation"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
                   </span>
-                  <span>Code</span>
-                </a>
-              </span>
+                </div>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="hero-content has-text-centered">
-        <div class="responsible-ai-icon">
-          <i class="fas fa-balance-scale fa-5x" style="color: #3273dc; margin-bottom: 2rem;"></i>
-        </div>
-      <h2 class="subtitle has-text-centered">
-          A comprehensive survey exploring responsibility in <span class="dnerf">Generative AI</span> systems: examining the roles of data, models, users, and regulations for a sustainable future.
-      </h2>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-multiline is-centered">
-        <div class="column is-one-third has-text-centered">
-          <div class="box">
-            <i class="fas fa-database fa-3x" style="color: #3273dc; margin-bottom: 1rem;"></i>
-            <h3 class="title is-4">Data Responsibility</h3>
-            <p>Quality, bias mitigation, and ethical data collection practices</p>
-        </div>
-        </div>
-        <div class="column is-one-third has-text-centered">
-          <div class="box">
-            <i class="fas fa-brain fa-3x" style="color: #23d160; margin-bottom: 1rem;"></i>
-            <h3 class="title is-4">Model Accountability</h3>
-            <p>Architecture decisions, training methodologies, and deployment considerations</p>
-        </div>
-        </div>
-        <div class="column is-one-third has-text-centered">
-          <div class="box">
-            <i class="fas fa-users fa-3x" style="color: #ff3860; margin-bottom: 1rem;"></i>
-            <h3 class="title is-4">User Responsibility</h3>
-            <p>Ethical application, misuse prevention, and responsible usage patterns</p>
-        </div>
-        </div>
-        <div class="column is-one-third has-text-centered">
-          <div class="box">
-            <i class="fas fa-gavel fa-3x" style="color: #ffdd57; margin-bottom: 1rem;"></i>
-            <h3 class="title is-4">Regulatory Frameworks</h3>
-            <p>Policy development, governance structures, and enforcement mechanisms</p>
-        </div>
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <div class="hero-content has-text-centered">
+            <div class="responsible-ai-icon">
+              <i
+                class="fas fa-balance-scale fa-5x"
+                style="color: #3273dc; margin-bottom: 2rem"
+              ></i>
+            </div>
+            <h2 class="subtitle has-text-centered">
+              A comprehensive survey exploring agentic AI
+              <span class="dnerf"
+                >Benchmarks, Evaluation Metrics & Regulatory Alignment</span
+              >.
+            </h2>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Generative AI is moving rapidly from research into real world deployment across sectors, which elevates the need for responsible 
-            development, evaluation, and governance. This survey synthesizes the landscape of responsible generative AI across methods, 
-            benchmarks, and policies, and connects governance expectations to concrete engineering practice. We follow a prespecified search 
-            and screening protocol focused on post-ChatGPT era with selective inclusion of foundational work for definitions, and we conduct a 
-            narrative and thematic synthesis.
-          </p>
-          <p>
-            Three findings emerge. First, benchmark and practice coverage is dense for bias and toxicity but 
-            relatively sparse for privacy and provenance, deepfake and media integrity risk, and system level failure in tool using and agentic 
-            settings. Second, many evaluations remain static and task local, which limits evidence portability for audit and lifecycle assurance. 
-            Third, documentation and metric validity are inconsistent, which complicates comparison across releases and domains.
-          </p>
-          <p>
-            We outline a research and practice agenda that prioritizes adaptive and multimodal evaluation, privacy and provenance testing, deepfake risk 
-            assessment, calibration and uncertainty reporting, versioned and documented artifacts, and continuous monitoring. Limitations 
-            include reliance on public artifacts and the focus period, which may under represent capabilities reported later. The survey offers a 
-            path to align development and evaluation with governance needs and to support safe, transparent, and accountable deployment across 
-            domains.
-          </p>
+    <section class="hero is-light is-small">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-multiline is-centered">
+            <div class="column is-one-third has-text-centered">
+              <div class="box">
+                <i
+                  class="fas fa-database fa-3x"
+                  style="color: #3273dc; margin-bottom: 1rem"
+                ></i>
+                <h3 class="title is-4">Data Responsibility</h3>
+                <p>
+                  Quality, bias mitigation, and ethical data collection
+                  practices
+                </p>
+              </div>
+            </div>
+            <div class="column is-one-third has-text-centered">
+              <div class="box">
+                <i
+                  class="fas fa-brain fa-3x"
+                  style="color: #23d160; margin-bottom: 1rem"
+                ></i>
+                <h3 class="title is-4">Model Accountability</h3>
+                <p>
+                  Architecture decisions, training methodologies, and deployment
+                  considerations
+                </p>
+              </div>
+            </div>
+            <div class="column is-one-third has-text-centered">
+              <div class="box">
+                <i
+                  class="fas fa-users fa-3x"
+                  style="color: #ff3860; margin-bottom: 1rem"
+                ></i>
+                <h3 class="title is-4">User Responsibility</h3>
+                <p>
+                  Ethical application, misuse prevention, and responsible usage
+                  patterns
+                </p>
+              </div>
+            </div>
+            <div class="column is-one-third has-text-centered">
+              <div class="box">
+                <i
+                  class="fas fa-gavel fa-3x"
+                  style="color: #ffdd57; margin-bottom: 1rem"
+                ></i>
+                <h3 class="title is-4">Regulatory Frameworks</h3>
+                <p>
+                  Policy development, governance structures, and enforcement
+                  mechanisms
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!--/ Abstract. -->
+    </section>
 
-    <!-- Survey Overview -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Survey Overview</h2>
-        <div class="content has-text-justified">
-          <p>
-            This survey provides a comprehensive analysis of responsibility in generative AI systems, examining 
-            key stakeholders and their roles in ensuring ethical and sustainable AI development.
-          </p>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Generative AI is moving rapidly from research into real world
+                deployment across sectors, which elevates the need for
+                responsible development, evaluation, and governance. This survey
+                synthesizes the landscape of responsible generative AI across
+                methods, benchmarks, and policies, and connects governance
+                expectations to concrete engineering practice. We follow a
+                prespecified search and screening protocol focused on
+                post-ChatGPT era with selective inclusion of foundational work
+                for definitions, and we conduct a narrative and thematic
+                synthesis.
+              </p>
+              <p>
+                Three findings emerge. First, benchmark and practice coverage is
+                dense for bias and toxicity but relatively sparse for privacy
+                and provenance, deepfake and media integrity risk, and system
+                level failure in tool using and agentic settings. Second, many
+                evaluations remain static and task local, which limits evidence
+                portability for audit and lifecycle assurance. Third,
+                documentation and metric validity are inconsistent, which
+                complicates comparison across releases and domains.
+              </p>
+              <p>
+                We outline a research and practice agenda that prioritizes
+                adaptive and multimodal evaluation, privacy and provenance
+                testing, deepfake risk assessment, calibration and uncertainty
+                reporting, versioned and documented artifacts, and continuous
+                monitoring. Limitations include reliance on public artifacts and
+                the focus period, which may under represent capabilities
+                reported later. The survey offers a path to align development
+                and evaluation with governance needs and to support safe,
+                transparent, and accountable deployment across domains.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <!--/ Survey Overview -->
-  </div>
-</section>
+        <!--/ Abstract. -->
 
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <!-- Key Contributions -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Key Contributions</h2>
-        <div class="content has-text-justified">
-          <ul>
-            <li><strong>Comprehensive Framework:</strong> A systematic analysis of responsibility across data, models, users, and regulations in generative AI systems.</li>
-            <li><strong>Stakeholder Analysis:</strong> Detailed examination of roles and accountabilities for each key stakeholder in the AI ecosystem.</li>
-            <li><strong>Gap Identification:</strong> Critical assessment of current approaches and identification of areas requiring further attention.</li>
-            <li><strong>Sustainable AI Guidelines:</strong> Practical recommendations for developing responsible and sustainable generative AI systems.</li>
-          </ul>
+        <!-- Survey Overview -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Survey Overview</h2>
+            <div class="content has-text-justified">
+              <p>
+                This survey provides a comprehensive analysis of responsibility
+                in generative AI systems, examining key stakeholders and their
+                roles in ensuring ethical and sustainable AI development.
+              </p>
+            </div>
+          </div>
         </div>
+        <!--/ Survey Overview -->
       </div>
-    </div>
-    <!--/ Key Contributions -->
+    </section>
 
-    <!-- Related Work -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Work</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            This survey builds upon extensive research in AI ethics, algorithmic fairness, and responsible AI development.
-          </p>
-          <p>
-            Key areas of related work include <strong>AI governance frameworks</strong>, <strong>algorithmic bias detection and mitigation</strong>, 
-            <strong>ethical AI design principles</strong>, and <strong>regulatory approaches to AI oversight</strong>.
-          </p>
-          <p>
-            Our work synthesizes insights from computer science, law, policy, and ethics to provide a holistic view 
-            of responsibility in the generative AI landscape.
-          </p>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Key Contributions -->
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Key Contributions</h2>
+            <div class="content has-text-justified">
+              <ul>
+                <li>
+                  <strong>Comprehensive Framework:</strong> A systematic
+                  analysis of responsibility across data, models, users, and
+                  regulations in generative AI systems.
+                </li>
+                <li>
+                  <strong>Stakeholder Analysis:</strong> Detailed examination of
+                  roles and accountabilities for each key stakeholder in the AI
+                  ecosystem.
+                </li>
+                <li>
+                  <strong>Gap Identification:</strong> Critical assessment of
+                  current approaches and identification of areas requiring
+                  further attention.
+                </li>
+                <li>
+                  <strong>Sustainable AI Guidelines:</strong> Practical
+                  recommendations for developing responsible and sustainable
+                  generative AI systems.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <!--/ Key Contributions -->
+
+        <!-- Related Work -->
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Related Work</h2>
+
+            <div class="content has-text-justified">
+              <p>
+                This survey builds upon extensive research in AI ethics,
+                algorithmic fairness, and responsible AI development.
+              </p>
+              <p>
+                Key areas of related work include
+                <strong>AI governance frameworks</strong>,
+                <strong>algorithmic bias detection and mitigation</strong>,
+                <strong>ethical AI design principles</strong>, and
+                <strong>regulatory approaches to AI oversight</strong>.
+              </p>
+              <p>
+                Our work synthesizes insights from computer science, law,
+                policy, and ethics to provide a holistic view of responsibility
+                in the generative AI landscape.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ Related Work -->
       </div>
-    </div>
-    <!--/ Related Work -->
+    </section>
 
-  </div>
-</section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{raza2025responsible,
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{raza2025responsible,
   title={Who is responsible? the data, models, users or regulations? a comprehensive survey on responsible generative ai for a sustainable future},
   author={Raza, Shaina and Qureshi, Rizwan and Zahid, Anam and Fioresi, Joseph and Sadak, Ferhat and Saeed, Muhammad and Sapkota, Ranjan and Jain, Aditya and Zafar, Anas and Hassan, Muneeb Ul and others},
   journal={arXiv preprint arXiv:2502.08650},
   year={2025}
 }</code></pre>
-  </div>
-</section>
+      </div>
+    </section>
 
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="https://arxiv.org/pdf/2502.08650">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://anas-zafar.github.io/responsible-ai.github.io/">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <a class="icon-link" href="https://arxiv.org/pdf/2502.08650">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This website is licensed under a
+                <a
+                  rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/"
+                  >Creative Commons Attribution-ShareAlike 4.0 International
+                  License</a
+                >.
+              </p>
+              <p>
+                This means you are free to borrow the
+                <a href="https://anas-zafar.github.io/responsible-ai.github.io/"
+                  >source code</a
+                >
+                of this website, we just ask that you link back to this page in
+                the footer. Please remember to remove the analytics code
+                included in the header of the website which you do not want on
+                your website.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
-
-</body>
+    </footer>
+  </body>
 </html>
