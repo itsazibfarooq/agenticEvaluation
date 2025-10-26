@@ -126,12 +126,16 @@
                 <span class="author-block">Nazmul Karim<sup>3</sup>,</span>
                 <span class="author-block">Hasan Iqbal<sup>4</sup>,</span>
                 <span class="author-block"
-                  >Christos Emmanouilidis<sup>5</sup>,</span
+                  >Athanasios V. Vasilakos<sup>†5</sup>,</span
+                >
+                <span class="author-block"
+                  >Christos Emmanouilidis<sup>†6</sup>,</span
                 >
               </div>
 
               <div class="is-size-5 publication-authors">
-                <span class="author-block"><sup>∗</sup>Equal contributors</span>
+                <span class="author-block"><sup>∗</sup>Equal Contributors</span>
+                <span class="author-block"><sup>†</sup>Senior Authors</span>
               </div>
 
               <div class="is-size-5 publication-authors">
@@ -309,37 +313,25 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                Generative AI is moving rapidly from research into real world
-                deployment across sectors, which elevates the need for
-                responsible development, evaluation, and governance. This survey
-                synthesizes the landscape of responsible generative AI across
-                methods, benchmarks, and policies, and connects governance
-                expectations to concrete engineering practice. We follow a
-                prespecified search and screening protocol focused on
-                post-ChatGPT era with selective inclusion of foundational work
-                for definitions, and we conduct a narrative and thematic
-                synthesis.
-              </p>
-              <p>
-                Three findings emerge. First, benchmark and practice coverage is
-                dense for bias and toxicity but relatively sparse for privacy
-                and provenance, deepfake and media integrity risk, and system
-                level failure in tool using and agentic settings. Second, many
-                evaluations remain static and task local, which limits evidence
-                portability for audit and lifecycle assurance. Third,
-                documentation and metric validity are inconsistent, which
-                complicates comparison across releases and domains.
-              </p>
-              <p>
-                We outline a research and practice agenda that prioritizes
-                adaptive and multimodal evaluation, privacy and provenance
-                testing, deepfake risk assessment, calibration and uncertainty
-                reporting, versioned and documented artifacts, and continuous
-                monitoring. Limitations include reliance on public artifacts and
-                the focus period, which may under represent capabilities
-                reported later. The survey offers a path to align development
-                and evaluation with governance needs and to support safe,
-                transparent, and accountable deployment across domains.
+                Agentic AI represents a new generation of Artificial
+                Intelligence (AI) systems capable of perceiving, reasoning,
+                planning, and acting toward achieving goals with a degree of
+                autonomy. Unlike traditional AI models that merely generate
+                outputs, these systems maintain memory, interact with their
+                environment, and adapt over time. However, evaluating such
+                interactive and evolving behavior remains a significant
+                challenge. While several recent surveys have examined agentic AI
+                architectures, components, and applications, few have
+                systematically reviewed their evaluation, particularly regarding
+                performance, reliability, and governance across an evolving
+                agentic AI ecosystem. This paper addresses that gap by reviewing
+                recent progress in the development and assessment of agentic AI,
+                focusing on three core dimensions: benchmarks, metrics, and
+                governance. We analyze how current evaluation frameworks capture
+                reasoning, planning, collaboration, and ethical alignment across
+                single- and multi-agent systems. Ultimately, this study aims to
+                establish a unified foundation for building trustworthy,
+                auditable, and human-aligned AI agents.
               </p>
             </div>
           </div>
@@ -347,18 +339,18 @@
         <!--/ Abstract. -->
 
         <!-- Survey Overview -->
-        <div class="columns is-centered has-text-centered">
+        <!-- <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <h2 class="title is-3">Survey Overview</h2>
             <div class="content has-text-justified">
               <p>
-                This survey provides a comprehensive analysis of responsibility
+                This survey provides a comprehensive analysis of agentic AI benchmarks, 
                 in generative AI systems, examining key stakeholders and their
                 roles in ensuring ethical and sustainable AI development.
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
         <!--/ Survey Overview -->
       </div>
     </section>
@@ -393,24 +385,20 @@
             <div class="content has-text-justified">
               <ul>
                 <li>
-                  <strong>Comprehensive Framework:</strong> A systematic
-                  analysis of responsibility across data, models, users, and
-                  regulations in generative AI systems.
+                  <strong>Structured Benchmark Review:</strong> The first
+                  comprehensive survey categorizing existing benchmarks and
+                  evaluation metrics for agentic AI systems by lifecycle stage
+                  and highlighting commonly used metrics.
                 </li>
                 <li>
-                  <strong>Stakeholder Analysis:</strong> Detailed examination of
-                  roles and accountabilities for each key stakeholder in the AI
-                  ecosystem.
+                  <strong>Thematic Analysis:</strong> Identification of emerging
+                  trends and open challenges in the evaluation of agentic AI
+                  systems through a detailed thematic synthesis.
                 </li>
                 <li>
-                  <strong>Gap Identification:</strong> Critical assessment of
-                  current approaches and identification of areas requiring
-                  further attention.
-                </li>
-                <li>
-                  <strong>Sustainable AI Guidelines:</strong> Practical
-                  recommendations for developing responsible and sustainable
-                  generative AI systems.
+                  <strong>Governance Examination:</strong> Analysis of
+                  governance aspects and regulatory alignment in current
+                  evaluation frameworks for agentic AI.
                 </li>
               </ul>
             </div>
@@ -419,7 +407,7 @@
         <!--/ Key Contributions -->
 
         <!-- Related Work -->
-        <div class="columns is-centered">
+        <!-- <div class="columns is-centered">
           <div class="column is-full-width">
             <h2 class="title is-3">Related Work</h2>
 
@@ -442,8 +430,131 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
         <!--/ Related Work -->
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">
+          Symbolic Comparison of Prior Survey Papers and Our Work on Agentic AI
+        </h2>
+        <div
+          class="table-container"
+          style="font-family: 'Times New Roman', Times, serif; color: black"
+        >
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              font-size: 14px;
+              margin: auto;
+              text-align: left;
+            "
+          >
+            <thead style="border-bottom: 2px solid #000">
+              <tr>
+                <th style="width: 16%; padding: 6px">Survey</th>
+                <th style="padding: 6px">Focus</th>
+                <th style="width: 9%; text-align: center">Timeline</th>
+                <th style="width: 9%; text-align: center">Benchmarks</th>
+                <th style="width: 9%; text-align: center">Metrics</th>
+                <th style="width: 11%; text-align: center">Governance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Yehudai et al. (2025)</td>
+                <td>Evaluation of LLM-based agents</td>
+                <td style="text-align: center">Post</td>
+                <td style="text-align: center; color: darkgreen">&#10003;</td>
+                <td style="text-align: center; color: darkgreen">&#10003;</td>
+                <td style="text-align: center; color: blue">&#9680;</td>
+              </tr>
+              <tr>
+                <td>Plaat et al. (2025)</td>
+                <td>Agentic LLMs: reason–act–interact</td>
+                <td style="text-align: center">Post</td>
+                <td style="text-align: center; color: blue">&#9680;</td>
+                <td style="text-align: center; color: blue">&#9680;</td>
+                <td style="text-align: center; color: blue">&#9680;</td>
+              </tr>
+              <tr>
+                <td>Acharya et al. (2025)</td>
+                <td>Agentic AI foundations &amp; applications</td>
+                <td style="text-align: center">Pre+Post</td>
+                <td style="text-align: center; color: blue">&#9680;</td>
+                <td style="text-align: center; color: blue">&#9680;</td>
+                <td style="text-align: center; color: darkgreen">&#10003;</td>
+              </tr>
+              <tr>
+                <td>Bandi et al. (2025)</td>
+                <td>Taxonomy: AI agents vs. agentic AI</td>
+                <td style="text-align: center">Pre+Post</td>
+                <td style="text-align: center; color: red">&#10007;</td>
+                <td style="text-align: center; color: red">&#10007;</td>
+                <td style="text-align: center; color: blue">&#9680;</td>
+              </tr>
+              <tr>
+                <td>Hughes et al. (2025)</td>
+                <td>Multi-expert industry analysis</td>
+                <td style="text-align: center">Pre+Post</td>
+                <td style="text-align: center; color: red">&#10007;</td>
+                <td style="text-align: center; color: red">&#10007;</td>
+                <td style="text-align: center; color: darkgreen">&#10003;</td>
+              </tr>
+              <tr>
+                <td>Piccialli et al. (2025)</td>
+                <td>Distributed AgentAI for Industry 4.0</td>
+                <td style="text-align: center">Pre+Post</td>
+                <td style="text-align: center; color: blue">&#9680;</td>
+                <td style="text-align: center; color: blue">&#9680;</td>
+                <td style="text-align: center; color: darkgreen">&#10003;</td>
+              </tr>
+              <tr>
+                <td>Mohammadi et al. (2025)</td>
+                <td>Evaluation/benchmarking of LLM agents</td>
+                <td style="text-align: center">Post</td>
+                <td style="text-align: center; color: darkgreen">&#10003;</td>
+                <td style="text-align: center; color: darkgreen">&#10003;</td>
+                <td style="text-align: center; color: red">&#10007;</td>
+              </tr>
+              <tr>
+                <td>Nisa et al. (2025)</td>
+                <td>Agentic AI overview (org transformation)</td>
+                <td style="text-align: center">Pre+Post</td>
+                <td style="text-align: center; color: blue">&#9680;</td>
+                <td style="text-align: center; color: blue">&#9680;</td>
+                <td style="text-align: center; color: red">&#10007;</td>
+              </tr>
+              <tr>
+                <td>Yu et al. (2025)</td>
+                <td>Trustworthy &amp; Security evaluation of agents</td>
+                <td style="text-align: center">Post</td>
+                <td style="text-align: center; color: red">&#10007;</td>
+                <td style="text-align: center; color: blue">&#9680;</td>
+                <td style="text-align: center; color: red">&#10007;</td>
+              </tr>
+              <tr style="font-weight: bold; border-top: 2px solid #000">
+                <td>Ours</td>
+                <td>Benchmarks, metrics, and governance</td>
+                <td style="text-align: center">Post</td>
+                <td style="text-align: center; color: darkgreen">&#10003;</td>
+                <td style="text-align: center; color: darkgreen">&#10003;</td>
+                <td style="text-align: center; color: darkgreen">&#10003;</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="font-size: 13px; margin-top: 10px">
+            <i>Legend:</i>
+            <span style="color: darkgreen">&#10003;</span> = Present /
+            Strong,&nbsp; <span style="color: blue">&#9680;</span> = Partial /
+            Limited,&nbsp; <span style="color: red">&#10007;</span> =
+            Absent,&nbsp; Pre = Pre-LLM era,&nbsp; Post = Post-LLM era.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -452,7 +563,7 @@
         <h2 class="title">BibTeX</h2>
         <pre><code>@article{farooq2025agentic,
   title={Evaluating and Regulating Agentic AI:  A Study of Benchmarks, Metrics, and Regulation},
-  author={Farooq, Azib; Raza, Shaina, Karim, Nazmul; Iqbal, Hassan; Emmanouilidis, Christos},
+  author={Farooq, Azib; Raza, Shaina; Karim, Nazmul; Iqbal, Hassan; Vasilakos, Athanasios; Emmanouilidis, Christos},
   journal={},
   year={2025}
 }</code></pre>
