@@ -1,84 +1,8 @@
-````markdown
-# [Evaluating and Governing Agentic AI: Benchmarks, Metrics and Regulatory Alignment]
-
-**[Author 1](https://link-to-profile), [Author 2](https://link-to-profile), [Author 3](https://link-to-profile), and [Author 4](https://link-to-profile)**
-
-<p align="left">
-  <a href="[https://arxiv.org/abs/YOUR_PAPER_ID]">
-    <img alt="Paper" src="https://img.shields.io/badge/paper-arXiv-red.svg?style=flat-square">
-  </a>
-  <a href="[https://your-project-website.com]">
-    <img alt="Project Website" src="https://img.shields.io/badge/project-website-blue.svg?style=flat-square">
-  </a>
-  <a href="LICENSE">
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square">
-  </a>
-</p>
-
-This repository contains the official resources, code, and complete bibliography for our paper, **[Your Paper Title Here]**.
-
----
-
-## 📖 Abstract
-
-> **[Paste your paper's abstract here.]**
->
-> _Example: This paper presents a comprehensive survey of the Agentic AI landscape, focusing on evaluation benchmarks, security vulnerabilities, and governance frameworks. We analyze over 100 recent contributions to categorize the state-of-the-art in agent architectures, reasoning, and safety. We identify critical gaps in..._
-
----
-
-## 🚀 Getting Started
-
-### Installation
-
-To set up the environment and install the required dependencies, please follow these steps:
-
-```bash
-# 1. Clone the repository
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-cd YOUR_REPO_NAME
-
-# 2. Create and activate a virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-
-# 3. Install dependencies
-pip install -r requirements.txt
-```
-````
-
-### Usage
-
-[Provide instructions on how to run your code, reproduce experiments, or use your project.]
-
-```bash
-# Example command to run an evaluation
-python run_evaluation.py --model gpt-4 --benchmark AgentBench
-```
-
----
-
-## ✏️ Citation
-
-If you find our work useful in your research, please consider citing our paper:
-
-```bibtex
-@article{YOUR_BIBTEX_KEY_HERE,
-  title   = {[Your Paper Title Here]},
-  author  = {[Author 1 and Author 2 and ...]},
-  journal = {[arXiv preprint arXiv:XXXX.XXXXX or Conference Proceedings]},
-  year    = {2025}
-}
-```
-
----
-
-## 📚 References
+# **Evaluating and regulating agentic AI: a study of benchmarks, metrics, and regulation**
 
 Our work builds on a wide array of research in Agentic AI, governance, and evaluation. The following is the complete, categorized bibliography from our paper.
 
-\<details\>
-\<summary\>\<strong\>Click to expand the full reference list\</strong\>\</summary\>
+
 
 ### Agentic AI & MAS (Surveys & General Concepts)
 
@@ -92,7 +16,6 @@ Our work builds on a wide array of research in Agentic AI, governance, and evalu
 - Plaat, A., et al. (2025). _Agentic Large Language Models, a survey_. arXiv.
 - Qu, X., et al. (2025). _A Comprehensive Review of AI Agents: Transforming Possibilities in Technology and Beyond_. arXiv.
 - Russell, S. J. & Norvig, P. (2021). _Artificial Intelligence: A Modern Approach_ (4th ed.). Pearson.
-- Sapkota, R., et al. (2025). _Ai agents vs. agentic ai: A conceptual taxonomy, applications and challenges_. arXiv.
 - Wang, L., et al. (2024). _A survey on large language model based autonomous agents_. Frontiers of Computer Science.
 - Wooldridge, M. (2009). _An Introduction to MultiAgent Systems_ (2nd ed.). John Wiley & Sons.
 
@@ -290,10 +213,14 @@ Our work builds on a wide array of research in Agentic AI, governance, and evalu
 - Zhang, T., et al. (2021). _C-planning: An automatic curriculum for learning goal-reaching tasks_. arXiv.
 - Zhang, Z., et al. (2025). _RoboAct-CLIP: Video-Driven Pre-training of Atomic Action Understanding for Robotics_. arXiv.
 
-\</details\>
 
 ---
-
+```
+@article{farooq2025agentic,
+  title={Evaluating and Regulating Agentic AI:  A Study of Benchmarks, Metrics, and Regulation},
+  author={Farooq, Azib; Raza, Shaina, Karim, Nazmul; Iqbal, Hassan; Emmanouilidis, Christos},
+  journal={},
+  year={2025}
+}
 ```
 
-```
