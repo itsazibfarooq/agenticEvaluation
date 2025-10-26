@@ -218,7 +218,7 @@ Our work builds on a wide array of research in Agentic AI, governance, and evalu
 ```
 @article{farooq2025agentic,
   title={Evaluating and Regulating Agentic AI:  A Study of Benchmarks, Metrics, and Regulation},
-  author={Farooq, Azib; Raza, Shaina, Karim, Nazmul; Iqbal, Hassan; Emmanouilidis, Christos},
+  author={Farooq, Azib; Raza, Shaina; Karim, Nazmul; Iqbal, Hassan; Vasilakos, Athanasios; Emmanouilidis, Christos},
   journal={},
   year={2025}
 }
