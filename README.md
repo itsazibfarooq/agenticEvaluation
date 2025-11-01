@@ -2,8 +2,6 @@
 
 Our work builds on a wide array of research in Agentic AI, governance, and evaluation. The following is the complete, categorized bibliography from our paper.
 
-
-
 ### Agentic AI & MAS (Surveys & General Concepts)
 
 - Acharya, D. B., et al. (2025). _Agentic ai: Autonomous intelligence for complex goals--a comprehensive survey_. IEEE Access.
@@ -213,14 +211,13 @@ Our work builds on a wide array of research in Agentic AI, governance, and evalu
 - Zhang, T., et al. (2021). _C-planning: An automatic curriculum for learning goal-reaching tasks_. arXiv.
 - Zhang, Z., et al. (2025). _RoboAct-CLIP: Video-Driven Pre-training of Atomic Action Understanding for Robotics_. arXiv.
 
-
 ---
+
 ```
 @article{farooq2025agentic,
   title={Evaluating and Regulating Agentic AI:  A Study of Benchmarks, Metrics, and Regulation},
   author={Farooq, Azib; Raza, Shaina; Karim, Nazmul; Iqbal, Hassan; Vasilakos, Athanasios; Emmanouilidis, Christos},
-  journal={},
+  journal={techrxiv, techrxiv.176186841.18883348/v1},
   year={2025}
 }
 ```
-
