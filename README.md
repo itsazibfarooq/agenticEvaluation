@@ -20,7 +20,7 @@
 
 <br/>
 
-[📄 Paper](https://www.techrxiv.org/doi/full/10.36227/techrxiv.176186841.18883348/v1) · [💻 Code](https://github.com/itsazibfarooq/agenticEvaluation) · [🌐 Website](#)
+[📄 Paper](https://www.sciencedirect.com/science/article/pii/S1566253526003246) · [💻 Code](https://github.com/itsazibfarooq/agenticEvaluation) · [🌐 Website](https://itsazibfarooq.github.io/agenticEvaluation/)
 
 </div>
 
